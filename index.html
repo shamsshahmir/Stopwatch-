@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Stopwatch</title>
+</head>
+<body>
+        <div class="wrapper">
+            <div class="display">
+                <span class="timerdisplay" id="timerhrs">00</span> :
+                <span class="timerdisplay" id="timermin">00</span> : 
+                <span class="timerdisplay" id="timersec">00</span> .
+                <span class="timerdisplay" id="timermilisec">00</span>
+            </div>
+
+            <div class="splitime">
+                <p id="heading">SPLIT TIME</p>
+            </div>
+
+            <div class="buttons">
+                <button id="startbtn" onclick="startPause()">Start</button>
+                <button id="splitbtn" onclick="split()" >Split</button>
+                <button id="resetbtn" onclick="reset()" >Reset</button>
+            </div>
+                    
+                   
+
+            <div><hr class="divider"></div>
+            <br>
+
+            <div id="split">
+                <ol id="splitrec">
+                    <!-- <li>Hello</li>
+                    <li>Hello</li>
+                    <li>Hello</li>
+                    <li>Hello</li> -->
+                </ol>
+                
+            </div>
+        </div>
+    
+    <script src="stopwatch.js"></script>
+</body>
+</html>
